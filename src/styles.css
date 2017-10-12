@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%}
+img { max-width: 100%;}
+a.logo {
+    display: block;
+    padding: 30px 15px;
+   
+    text-align: center;
+    /* background-color: #000; */
+    
+}
+a.logo img { max-width: 150px}
+.frame {
+    max-width: 375px;
+    width: 100%;
+    box-shadow: 0 0 5px #777;
+    margin: 20px auto;
+    height: 600px;
+    border-radius: 20px;
+}
+.container { width: 100%;}
+form#login {
+    margin: 30px 0;
+}
+section.loginpage {
+    background-color: rgba(236, 236, 236, 0.71);
+    height: 100%;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    overflow: auto;
+        margin-bottom: 20px;
+}
+header nav {
+    float: left;
+}
+.user_details {
+    float: right;
+    display: table;
+}
+.user_details > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+.user_details > strong {
+    padding-right: 10px;
+    font-size: 18px;
+}
+.user_details a.user_pic {
+    width: 45px;
+    border-radius: 50%;
+    height: 45px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px 5px;
+}
+header nav i.material-icons {
+    font-size: 34px;
+    padding: 10px;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+ .card-icn {
+    background-color: #dc143c;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.main-info  .card-body {
+    padding: 10px 0 0 0;
+}
+.card-icn i.material-icons {
+    font-size: 28px;     line-height: 50px;
+} /*
+.card.bg {
+    margin-top: 70px;
+    box-shadow: 0 0 6px #f7bbc7;
+    background-color: rgba(220, 20, 60, 0.07);
+} */
+
+.main-info article:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 4px dashed rgb(249, 174, 189);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+     animation-name: rotate_border;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+    animation-timing-function: linear; 
+}
+.main-info { margin-top: 20px;}
+.main-info article {
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(220, 20, 60, 0.07);
+    position: relative;
+    padding: 15px;
+    margin: 0 15px;
+    clear: both;
+    overflow: hidden;
+}
+.main-info article .card-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.main-info article.room_info {
+    float: right;
+    background-color: rgba(62, 120, 245, 0.09);
+}
+.main-info article a.card-link {
+    font-size: 14px;
+    text-decoration: underline;
+}
+.main-info article.room_info:after {
+    border-color: #3e78f5;
+}
+.main-info article.room_info .card-icn {
+    background-color: #3e78f5;
+}
+
+.main-info article.room_exps {
+    background-color: rgba(129, 227, 222, 0.09);
+}
+
+.main-info article.room_exps .card-icn {
+    background-color: #2ec1b4;
+}
+.main-info article.room_exps:after {
+    border-color: #2ec1b4;
+}
+.bg-primary {background-color: rgba(220, 20, 60,2) !important }
+budget-info h4 {
+    margin: 15px 0;
+    font-size: 19px;
+}
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(assets/images/pattern.png);
+    width: 100%;
+    height: 100%;
+    opacity: 0.06;
+}
+.card-body span {
+    line-height: 14px;
+    display: block;
+}
+
+
+
+
+
+
+
+@keyframes rotate_border {
+    0% { transform:rotate(0);}
+    100% { transform:rotate(360deg); } 
+}

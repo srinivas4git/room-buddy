@@ -1,0 +1,28 @@
+{
+	"RoomExps": [
+		{
+			"username": "srinivas",
+			"date" : "12/09/2017",
+			"items": "someItem",
+			"price": 500 
+		},
+		{
+			"username": "srinivas",
+			"date" : "12/09/2017",
+			"items": "someItem",
+			"price": 500 
+		},
+		{
+			"username": "srinivas",
+			"date" : "12/09/2017",
+			"items": "someItem",
+			"price": 500 
+		},
+		{
+			"username": "srinivas",
+			"date" : "12/09/2017",
+			"items": "someItem",
+			"price": 500 
+		}
+	]
+}

@@ -1,0 +1,31 @@
+<div class="container">
+	<h4><strong>Month:</strong> September</h4>
+<div class="form-group">
+	<input type="text" [(ngModel)]="searchText" 
+           class="form-control" placeholder="Search By Category" />
+</div>
+
+
+<table class="table table-striped table-inverse">
+	<thead class="bg-primary">
+		<tr>
+			<th (click)="sort('username')">Name</th>
+			<th (click)="sort('date')">Date</th>
+			<th (click)="sort('items')">Items</th>
+			<th (click)="sort('price')">Price</th>
+		</tr>
+	</thead>
+	<tr *ngFor="let item of records | userData: searchText | OrderBy: {property: column, direction: direction} ">
+		<td>{{ item.username }}</td>
+		<td>{{ item.date }}</td>
+		<td>{{ item.items }}</td>
+		<td>{{ item.price }}</td>
+	</tr>
+	<tr *ngIf="nodata">
+		<td colspan="5">No data found</td>
+	</tr>
+</table>
+<a (click)="addField()">add field</a>
+<div id="demo"></div>
+
+</div>
